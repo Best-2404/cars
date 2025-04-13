@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ทำ พ.ร.บ. รถยนต์ - มิตรแท้ประกันภัย</title>
+  <title>มิตรแท้ประกันภัย - ตัวแทน</title>
   <style>
     body {
       font-family: 'Prompt', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f1f1f1;
+      background: #f9f9f9;
       color: #333;
     }
     header {
@@ -35,6 +35,40 @@
       padding: 20px;
       text-align: center;
     }
+    .agent-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .id-card {
+      width: 480px;
+      height: 280px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    .qr-code {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .plans {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .plans img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
     iframe {
       width: 100%;
       height: 1000px;
@@ -46,6 +80,7 @@
       color: white;
       padding: 20px;
       text-align: center;
+      position: relative;
     }
     .line-chat-button {
       position: fixed;
@@ -68,29 +103,47 @@
 <body>
   <header>
     <img src="logo.png" alt="โลโก้มิตรแท้ประกันภัย">
-    <h1>ทำ พ.ร.บ. รถยนต์ออนไลน์</h1>
+    <h1>มั่นใจได้ในทุกการเดินทาง - ประกันภัยโดยมืออาชีพ</h1>
   </header>
   <nav>
-    <a href="index.html">หน้าหลัก</a>
-    <a href="about.html">เกี่ยวกับเรา</a>
-    <a href="plans.html">แผนประกัน</a>
-    <a href="act.html">ทำ พ.ร.บ.</a>
-    <a href="contact.html">ติดต่อ</a>
-    <a href="emergency.html">เบอร์ฉุกเฉิน</a>
-    <a href="join.html">สมัครตัวแทน</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#plans">แผนประกันรถยนต์</a>
+    <a href="#act">ทำ พ.ร.บ.</a>
+    <a href="#emergency">เบอร์ฉุกเฉิน</a>
+    <a href="#join">สมัครตัวแทน</a>
+    <a href="#contact">ติดต่อตัวแทน</a>
   </nav>
-
-  <div class="section">
-    <h2>กรอกข้อมูลเพื่อทำ พ.ร.บ. ออนไลน์</h2>
-    <p>กรุณากรอกแบบฟอร์มด้านล่างเพื่อทำ พ.ร.บ. ทางออนไลน์ สะดวก ปลอดภัย พร้อมบริการจากตัวแทนโดยตรง</p>
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKsCCubZo3QY2bYJHyNAI7JrmG3rcs1fOjx3PpKPVd6tF2lw/viewform?embedded=true">กำลังโหลดแบบฟอร์ม…</iframe>
+  <div class="section agent-info" id="about">
+    <img src="agent-id.png" alt="บัตรตัวแทน" class="id-card">
+    <img src="line-qr.jpg" alt="QR Code LINE" class="qr-code">
   </div>
-
-  <footer>
+  <div class="section" id="plans">
+    <h2>เปรียบเทียบแผนประกันภัย</h2>
+    <div class="plans">
+      <img src="insurance2plus.jpg" alt="แผนประกัน 2+">
+      <img src="insurance3plus.jpg" alt="แผนประกัน 3+">
+    </div>
+  </div>
+  <div class="section" id="act">
+    <h2>ทำ พ.ร.บ. รถยนต์</h2>
+    <p>บริการทำ พ.ร.บ. รถยนต์ออนไลน์ สะดวก รวดเร็ว ถูกต้องตามกฎหมาย</p>
+    <p>กรอกข้อมูลและติดต่อ <strong>093-918-0847</strong> หรือแอดไลน์ <strong>@bestboy7244</strong></p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKsCCubZo3QY2bYJHyNAI7JrmG3rcs1fOjx3PpKPVd6tF2lw/viewform?embedded=true">กำลังโหลด…</iframe>
+  </div>
+  <div class="section" id="emergency">
+    <h2>เบอร์ติดต่อฉุกเฉิน</h2>
+    <p style="font-size: 1.5em; font-weight: bold; color: red;">โทร 1741</p>
+  </div>
+  <div class="section" id="join">
+    <h2>สมัครตัวแทนประกันภัยมิตรแท้</h2>
+    <p>หากคุณสนใจร่วมงานกับมิตรแท้ประกันภัยในฐานะตัวแทนประกันวินาศภัย</p>
+    <p>กรุณาติดต่อ <strong>093-918-0847</strong> หรือแอดไลน์ <strong>@bestboy7244</strong></p>
+    <p>เปิดโอกาสให้คุณสร้างรายได้มั่นคงกับองค์กรชั้นนำ</p>
+  </div>
+  <footer id="contact">
     <p>ติดต่อสอบถามเพิ่มเติมได้ที่ LINE หรือโทร <a href="tel:0939180847" style="color: #ffeb3b; text-decoration: none;">093-918-0847</a></p>
     <p>ตัวแทนประกันภัยโดย นายกฤดิพงษ์ ใหญ่ยงค์ - มิตรแท้ประกันภัย</p>
-    <p>จดทะเบียนกับบริษัทมิตรแท้ประกันภัย มีใบอนุญาตถูกต้องตามกฎหมาย</p>
+    <p>บริษัทมิตรแท้ประกันภัย มีใบอนุญาตถูกต้องตามกฎหมาย</p>
   </footer>
   <a class="line-chat-button" href="https://line.me/ti/p/~bestboy7244" target="_blank">แชทผ่าน LINE</a>
 </body>
