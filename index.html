@@ -42,9 +42,17 @@
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
-    .agent-info img {
+    .id-card, .qr-code {
       max-width: 300px;
-      border-radius: 10px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .id-card {
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+    .qr-code {
+      border-radius: 12px;
     }
     .plans {
       display: flex;
@@ -101,8 +109,8 @@
     <a href="#emergency">เบอร์ฉุกเฉิน</a>
   </nav>
   <div class="section agent-info" id="about">
-    <img src="agent-id.png" alt="บัตรตัวแทน">
-    <img src="line-qr.jpg" alt="QR Code LINE">
+    <img src="agent-id.png" alt="บัตรตัวแทน" class="id-card">
+    <img src="line-qr.jpg" alt="QR Code LINE" class="qr-code">
   </div>
   <div class="section" id="plans">
     <h2>เปรียบเทียบแผนประกันภัย</h2>
