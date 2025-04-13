@@ -42,17 +42,19 @@
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
-    .id-card, .qr-code {
-      width: 300px;
+    .id-card {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    .qr-code {
+      width: 180px;
       height: 180px;
       object-fit: cover;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .id-card {
-      border: 2px solid #ccc;
-      border-radius: 4px;
-    }
-    .qr-code {
       border-radius: 12px;
     }
     .plans {
@@ -108,6 +110,7 @@
     <a href="#plans">แผนประกัน</a>
     <a href="#contact">ติดต่อ</a>
     <a href="#emergency">เบอร์ฉุกเฉิน</a>
+    <a href="#join">สมัครตัวแทน</a>
   </nav>
   <div class="section agent-info" id="about">
     <img src="agent-id.png" alt="บัตรตัวแทน" class="id-card">
@@ -127,6 +130,12 @@
   <div class="section" id="emergency">
     <h2>เบอร์ติดต่อฉุกเฉิน</h2>
     <p style="font-size: 1.5em; font-weight: bold; color: red;">โทร 1741</p>
+  </div>
+  <div class="section" id="join">
+    <h2>สมัครตัวแทนประกันภัยมิตรแท้</h2>
+    <p>หากคุณสนใจร่วมงานกับมิตรแท้ประกันภัยในฐานะตัวแทนฝ่ายขาย</p>
+    <p>กรุณาติดต่อ <strong>093-918-0847</strong> หรือแอดไลน์ <strong>@bestboy7244</strong></p>
+    <p>เปิดโอกาสให้คุณสร้างรายได้มั่นคงกับองค์กรชั้นนำ</p>
   </div>
   <footer id="contact">
     <p>ติดต่อสอบถามเพิ่มเติมได้ที่ LINE หรือโทร <a href="tel:0939180847" style="color: #ffeb3b; text-decoration: none;">093-918-0847</a></p>
